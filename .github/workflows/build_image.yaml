@@ -18,6 +18,7 @@ jobs:
         with:
           name: "mauro"
           repo: ${{ github.event.repository.name }}
+          ext: ".py"
       - name: Get Tag
         id: tag
         uses: dawidd6/action-get-tag@v1
