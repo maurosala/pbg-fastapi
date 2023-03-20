@@ -12,6 +12,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: test action
+        id: greetings
+        uses: maurosala/pbg-action@main
+        with:
+          name: "mauro"
+          repo: ${{ github.event.repository.name }}
       - name: Get Tag
         id: tag
         uses: dawidd6/action-get-tag@v1
